@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- custom animations ---------- */
+
+@keyframes fadeSlideUp {
+  0%   { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0);   }
+}
+
+@keyframes fadeSlideDown {
+  0%   { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0);     }
+}
+
+@keyframes fadeSlideRight {
+  0%   { opacity: 0; transform: translateX(-40px); }
+  100% { opacity: 1; transform: translateX(0);     }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { text-shadow: 0 0 8px rgba(255,255,255,0.2); }
+  50%      { text-shadow: 0 0 18px rgba(255,255,255,0.6); }
+}
+
+@layer utilities {
+  .animate-fade-slide-up    { animation: fadeSlideUp 0.9s ease forwards;   }
+  .animate-fade-slide-right { animation: fadeSlideRight 0.9s ease forwards;}
+  .animate-pulse-glow       { animation: pulseGlow 2.5s ease-in-out infinite; }
+  .animate-fade-slide-down  {animation: fadeSlideDown 0.9s ease forwards; }
+}
