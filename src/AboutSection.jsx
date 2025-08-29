@@ -118,7 +118,7 @@ export default function AboutSection() {
         >
           <div className="relative h-72 w-72">
             <img
-              src="/images/portrait.jpg"
+              src="/images/portrait.png"
               alt="Varun Raj"
               className="h-full w-full rounded-full object-cover shadow-2xl"
             />

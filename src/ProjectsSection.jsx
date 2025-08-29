@@ -47,7 +47,7 @@ export default function ProjectsSection() {
     {
       title: "Portfolio Website",
       desc: "This very site – React + Tailwind, fully responsive & dark‑mode ready.",
-      github: "https://github.com/J-VarunRaj/portfolio",
+      github: "https://github.com/J-VarunRaj/P startortfolio",
       demo: "",
     },
     {
